@@ -1,0 +1,251 @@
+#header {
+  background-color: #fff;
+  padding: 10px 0px;
+  margin: 0 auto;
+}
+
+/* .topbar {
+  height: auto;
+  font-size: 14px;
+  margin-top: 10px;
+} */
+.logo_one img {
+  width: 200px;
+  height: 70px;
+}
+/* .logo_two img {
+  width: 300px;
+  height: 70px;
+} */
+.logo_three img {
+  width: 200px;
+  height: 70px;
+}
+.toolbar{
+  color: aliceblue;
+  /* padding: 1px; */
+  background-color: #154c79;
+  /* height: 40px; */
+  font-size: medium;
+}
+.navbar{
+  font-size: 16px;
+  padding: 4px 0px !important;
+    margin-right: 0px;
+    margin-top: 0px;
+    position: sticky;
+    top: -1px;
+    z-index: 9;
+}
+
+#navbarSupportedContent{
+  background-color: #154c79;
+}
+#navbarSupportedContent ul li a{
+  color: aliceblue;
+}
+
+.navbar-content-space{
+  justify-content: center;
+}
+.navbar span{
+  margin-left: 50px;
+  padding-right: 1rem;
+}
+.slide_images{
+  display: flex;
+  padding: 1px;
+  background-color: aliceblue;
+}
+
+.slider_img{
+  display: flex;
+ width: 200px;
+  
+}
+
+.mat_card{
+  margin:auto;
+  color: aliceblue;
+  background-color: #154c79;
+  position: relative;
+  float: center;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  /* width: 356px; */
+  height: 339px;
+  /* background: rgba(255, 255, 255, 0.05); */
+  /* margin: 20px; */
+  box-shadow: 0 15px 35px rgb(0 0 0 / 50%);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+.btn_action1{
+  color: black;
+  background-color: aliceblue;
+  border: transparent;
+  border-radius: 10px;
+  padding: 10px;
+}
+.btn_action2{
+  color: black;
+  background-color: transparent;
+  border: aliceblue solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.third_card{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #161616;
+	min-height: 100vh;
+}
+
+section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#DA22FF, #9733EE);
+	clip-path: circle(30% at right 70%);
+}
+
+section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#E55D87, #5FC3E4);
+	clip-path: circle(20% at 10% 10%);
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.container .card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.container .card .sci li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .card:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container .card .sci li a {
+	color: #fff;
+	font-size: 20px;
+} */
+
+.msh_supportCard{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.msh_supportCard {
+  text-decoration: none;
+  color: aliceblue;
+}
+.msh_supportCard:hover {
+  font-weight: 900px;
+}
