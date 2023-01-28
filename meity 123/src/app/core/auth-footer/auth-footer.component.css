@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.footer{
+    border-top: 1px solid #cbc7c7;
+    color: #3f3f3f;
+    font-size: 12px;
+}
+.text-center{
+    text-align: center;
+}
+.footer-content{
+    padding: 0 35%;
+}
+
+@media only screen and (max-width: 650px) {
+    .footer-content{
+        padding: 0px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .footer-content{
+        padding: 0px;
+    }
+}

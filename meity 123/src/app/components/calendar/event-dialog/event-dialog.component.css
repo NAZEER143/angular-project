@@ -1,0 +1,41 @@
+.row-items {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    border-radius: 3px;
+  }
+  
+  .add-button {
+    outline: none;
+  }
+  
+  .top-divider {
+    margin-top:15px;
+    margin-bottom:15px;
+  }
+  
+  .edit-button {
+    color:white;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .export-button-label {
+    margin-left: 10px;
+  }
+::ng-deep .cdk-global-overlay-wrapper{
+  top: 38px !important;
+  margin-left: 33px !important;
+
+}
+.dialog-title{
+  margin: 10px 0px 3px 16px !important;
+}
+.new-event{
+  text-decoration: none;
+  outline: none;
+  margin: 12px;
+}

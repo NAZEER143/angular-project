@@ -1,0 +1,75 @@
+<div class="page-wrapper">
+
+    <app-navbar></app-navbar>
+
+    <div class="Main-container">
+        <div class="container-login">
+            <div class="wrap-login">
+                <div class="login-form">
+                    <h4 class="login-title">Log In to your Meity account</h4>
+                    <form [formGroup]="mobileNumForm">
+                        <div class="wrap-input">
+                            <input class="auth-input form-control" formControlName="mobile"
+                                placeholder="E-mail/Mobile (Log In With OTP)">
+                        </div>
+                        <div><button class="auth-button" [disabled]="mobileNumForm.invalid" routerLink="/dashboard">Log
+                                In With OTP</button></div>
+                    </form>
+
+                    <div class="divider">
+                        <hr class="divider-line">
+                        <div class="or-circle">
+                            <span>or</span>
+                        </div>
+                    </div>
+                    <form [formGroup]="loginForm">
+
+                        <div class="wrap-input mr-t-15">
+                            <input class="auth-input form-control" formControlName="email" placeholder="E-mail/Mobile ">
+                        </div>
+                        <span class="invalid-message" *ngIf="!loginForm.get('email')?.valid &&
+                          (loginForm.get('email')?.touched || loginForm.get('email')?.dirty)">
+                            {{
+                            loginForm.get('email')?.hasError('minlength')
+                            ? 'Minimum 6 characters required'
+                            : loginForm.get('email')?.getError('invalid')
+                            }}
+                        </span>
+                        <div class="wrap-input mr-t-15">
+                            <input type="password" class="auth-input form-control" formControlName="password"
+                                placeholder="password">
+                            <span class="invalid-message" *ngIf="!loginForm.get('password')?.valid &&
+                                (loginForm.get('password')?.touched || loginForm.get('password')?.dirty)">
+                                {{
+                                loginForm.get('password')?.hasError('minlength')
+                                ? 'Minimum 6 characters required'
+                                : loginForm.get('password')?.getError('invalid')
+                                }}
+                            </span>
+                        </div>
+                        <div class="invalid-message" *ngIf="inValidMessage && loginForm.get('email')?.valid && loginForm.get('password')?.valid">!Invalid Credentials</div>
+                      
+                        <div class="mr-t-15">
+                            <div class="forgot-password" routerLink="/forgotpassword"><a
+                                    style="color: rgba(2, 20, 59, 0.8);">Forgot yoor password?</a></div>
+                        </div>
+                        <div>
+                            <button [disabled]="loginForm.invalid" class="auth-button" (click)="passwordLogin()">Log In
+                                With Password</button>
+                        </div>
+
+                        <div class="wrap-input mr-t-15">
+                            <i class="fab fa-facebook-square fa-4x text-primary m-3"></i>
+                            <i class="fab fa-twitter-square fa-4x text-primary m-3"></i>
+                            <i class="fab fa-twitter-square fa-4x text-primary m-3"></i>
+                            <i class="fab fa-facebook-square fa-4x text-primary m-3"></i>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <app-auth-footer></app-auth-footer>
+</div>
